@@ -1,0 +1,39 @@
+﻿@{
+    ViewData["Title"] = "AboutUs";
+}
+
+<h1 class="title">AboutUs</h1>
+
+<div class="images">
+    <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e"
+         alt="Nature" />
+
+    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"
+         alt="Mountain" />
+
+    <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e"
+         alt="Forest" />
+</div>
+
+<style>
+    .title {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .images {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        width: 90%;
+        margin: 30px auto;
+    }
+
+        .images img {
+            width: calc(33.33% - 10px);
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+</style>
