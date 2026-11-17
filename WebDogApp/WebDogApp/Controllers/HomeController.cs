@@ -22,17 +22,9 @@ namespace WebDogApp.Controllers
         {
             return View();
         }
-
         public IActionResult Contacts()
         {
             return View();
-        }
-
-        public IActionResult AboutUs()
-        { 
-            return View();
-        
-        
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

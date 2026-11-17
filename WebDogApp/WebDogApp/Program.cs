@@ -1,12 +1,11 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-
-
 using WebDogApp.Infrastructure.Data;
 
 namespace WebDogApp
 {
     public class Program
+
     {
         public static void Main(string[] args)
         {
@@ -28,8 +27,10 @@ namespace WebDogApp
                 options.Password.RequireUppercase = false;
                 options.Password.RequireNonAlphanumeric = false;
                 options.Password.RequiredLength = 5;
+
             })
-.AddEntityFrameworkStores<ApplicationDbContext>();
+            .AddEntityFrameworkStores<ApplicationDbContext>();
+
             builder.Services.AddControllersWithViews();
 
             var app = builder.Build();

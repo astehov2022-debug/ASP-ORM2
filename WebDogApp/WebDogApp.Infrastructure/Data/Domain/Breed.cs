@@ -11,9 +11,7 @@ namespace WebDogApp.Infrastructure.Data.Domain
     {
         public int Id { get; set; }
         [Required]
-
-        public string Name { get; set; }
-
-        public virtual IEnumerable<Dog> Dogs { get; set; } = null!;
+        public string Name { get; set; } = null!;
+        public virtual IEnumerable<Dog> Dogs { get; set; } = new List<Dog>();   
     }
 }

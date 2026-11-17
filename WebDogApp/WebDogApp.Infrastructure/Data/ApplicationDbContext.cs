@@ -1,7 +1,5 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Identity.Client;
-
 using WebDogApp.Infrastructure.Data.Domain;
 
 namespace WebDogApp.Infrastructure.Data
@@ -12,18 +10,10 @@ namespace WebDogApp.Infrastructure.Data
             : base(options)
         {
             this.Database.EnsureCreated();
-
-
         }
-
-
         public DbSet<Dog> Dogs { get; set; }
 
         public DbSet<Breed> Breeds { get; set; }
-
-
-
-
 
     }
 }
